@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input attributes</title>
+     <style>
+        div{
+            background-color: seagreen;
+            color: white;
+            width: 300px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- input attributes value , readonly , size , rows , cols-->
+
+    <!-- Value-->
+    <div>
+    	<form>
+    		<label for="username">Username</label>
+    		<input type="username" name="Username" value="Akash">
+    	</form>
+    </div>
+
+    <!-- Read only-->
+
+ 	<div>
+    	<form>
+    		<label for="username">Username</label>
+    		<input type="username" name="Username" value="Akash" readonly="true">
+    	</form>
+    </div>
+
+    <!--size-->
+
+     <div>
+    	<form>
+    		<label for="username">Username</label>
+    		<input type="username" name="Username" size="25">
+    	</form>
+    </div>
+
+    
+    <!-- HTML 5 Form Attributes required ,
+    no-validate , autofocus , pattern , placeholder -->
+
+    <h1 align="center">HTML5 Form Attributes</h1>
+    <!-- Required-->
+
+    <div>
+    	<form>
+    		<label for="username">Username</label>
+    		<input type="text" name="username" required="true">
+    		<input type="submit" name="Submit">
+    	</form>
+    </div>
+
+    <!-- Novalidate-->
+
+    <div>
+    	<form novalidate="true">
+    		<label for="email">Enter email</label>
+    		<input type="email" name="email" >
+    		<input type="submit" name="Submit">
+    		
+    	</form>
+    </div>
+
+    <!-- Autofocus-->
+    <!-- Autofocus can be applied to any one field-->
+
+    <div>
+    	<form>
+    		<label for="username">Username</label>
+    		<input type="text" name="username" autofocus="true">
+    		<label for="password">Password</label>
+    		<input type="password" name="Password">
+    	</form>
+    </div>
+
+    <!-- Pattern-->
+
+    <div>
+    	<form>
+    		<label for="username">Username</label>
+    		<input type="text" name="username" pattern="^[A-Za-z0-9_]{1,15}$">
+    		<input type="submit" name="Submit">
+    	</form>
+    </div>
+
+    <!-- Placeholder-->
+
+    <div>
+    	<form>
+    		<input type="text" placeholder="Enter your name" name="">
+    		<br>
+    		<textarea rows="5" cols="10" placeholder="Your message starts here"></textarea>
+
+    	</form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style type="text/css">
+    	div{
+    		background-color: seagreen;
+    		color: white;
+    		width: 300px;
+    		padding: 5px;
+    		margin: 5px;
+    	}
+    </style>
+</head>
+<body>
+
+
+    <!-- input and label -->
+    <div>
+    	<form>
+    		<label for="username">Username</label>
+    		<input type="text" name="" ="username">
+    		<br>
+    		<label for="password">Password</label>
+    		<input type="password" name="" ="password">
+    		<br>
+    		<input type="submit" value="Submit">
+    	</form>
+    </div>
+   <!-- Table form-->
+   <div>
+   	<form>
+   		<table>
+   			<tr>
+   				<td>
+   					<label for="username1">Username</label>
+   				</td>
+   				<td>
+   					<input type="text" name="username1">
+   				</td>
+   			</tr>
+   			<tr>
+   				<td>
+   					<label for="password1">Password</label>
+   				</td>
+   				<td>
+   					<input type="password" name="password1">
+   				</td>
+   			</tr>
+   			<tr>
+   				<td>
+   					<input type="submit" name="Submit">
+   				</td>
+   				<td>
+   					<input type="reset" name="Reset">
+   				</td>
+   			</tr>
+   		</table>
+   	</form>
+   </div> 
+
+    <!-- Select and Option -->
+    <div>
+    	<form>
+    		<label>Select a language</label>
+    		<select id="language">
+    			<option>HTML</option>
+    			<option>JavaScript</option>
+    			<option>CSS</option>
+    			<option>Bootstrap</option>
+    			<option>JQuery</option>
+    			<option>Ajax</option>
+    			<option>Angular JS</option>
+    		</select>
+    	</form>
+    </div>
+
+    <!-- Textarea -->
+    <div>
+    	<form>
+    		<label>Enter your messsage</label>
+    		<textarea rows="5" cols="10"></textarea>
+    	</form>
+    </div>
+
+    <!-- button --> 
+    <div>
+    	<form>
+    	<label for="username2">Username</label>
+    	<input type="text" name="username">
+    	<input type="submit" name="Submit">
+    	</form>
+    </div>
+
+    <!-- datalist -->
+    <div>
+    	<input list="technologies" name="tech">
+    	<datalist id="technologies">
+    		<option value="HTML">
+    		<option value="JavaScript">
+    		<option value="CSS">
+    		<option value="Bootstrap">
+    		<option value="JQuery">
+    		<option value="Angular JS">
+    	</datalist>
+    </div>
+
+
+</body>
+</html>
